@@ -5,8 +5,117 @@ body, body *{
 div.playground {
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: rgba(112, 171, 60, 0.752);
     position: relative;
+}
+
+.abottom {
+    width: 100vw;
+    height:70px;
+    background-color: rgba(139, 136, 61, 0.241);
+    position: absolute;
+    bottom: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(17, 123, 107);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.playInfo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(139, 136, 61);
+}
+
+.center_console{
+    width: 33%;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_console > h1{
+    text-align: center;
+    height: 1em;
+    width: 100%;
+}
+
+.points {
+    font-size: 1rem;
+    height: 1em;
+    width: 50px;
+    text-align: center;
+}
+
+.round_timer{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    gap: 5px;
+    justify-content: center;
+}
+
+#time, #round{
+    color: rgb(230, 0, 255);
+}
+
+.user{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user > h1 {
+    border-bottom: 2px solid #777;
+    text-align: center;
+}
+
+.computer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.computer > h1 {
+    border-bottom: 2px solid #777;
+    text-align: center;
+}
+
+.login{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 123, 255);
+    gap: 5px;
+}
+
+.login > label{
+    font-size: 1.5rem;
+}
+
+.login > input{
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(90, 75, 75, 0.271);
+}
+
+.login > button {
+    font-size: 1rem;
+    padding: 5px 15px;
 }
 
 .box{
@@ -14,9 +123,19 @@ div.playground {
     height: 50px;
     min-width: 50px;
     min-height: 50px;
-    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
     border: 3px solid black;
+    background-color: white;
 }
+
+.box_noDisplay{
+    display: none;
+}
+
+.inputON{
+    height: 200px;
+    border-radius: 80px 80px 0 0;
+}
+

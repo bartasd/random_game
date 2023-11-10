@@ -7,8 +7,33 @@
 <head>
 <body>
     <div class="playground"> 
-        <div class="atop"></div>
-        <div class="box" id="box"></div>
+        <div class="abottom" id="abottom">
+            <div class="playInfo">
+                <div class="user">
+                    <h1>USERNAME</h1>
+                    <h2 class="points">POINTS</h2>
+                </div>
+                <div class="center_console">
+                    <h1>Reaction GAME</h1>
+                    <div class="round_timer">
+                        <h2 class="points">timer:</h2>
+                        <h2 id="time" class="points"></h2>
+                        <h2 class="points">round:</h2>
+                        <h2 id="round" class="points"></h2>
+                    </div>
+                </div>
+                <div class="computer">
+                    <h1>COMPUTER</h1>
+                    <h2 class="points">POINTS</h2>
+                </div>
+            </div>
+            <div class="login" id="login">
+                <label for="user_name">Enter your name:</label>
+                <input type="text" id="user_name" name="name">
+                <button id="submit_name">START</button>
+            </div>
+        </div>
+        <div class="box box_noDisplay" id="box"></div>
     </div>
 
     
