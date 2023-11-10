@@ -1,0 +1,15 @@
+{
+  "name": "game_friday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --host=localhost --port=4618"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
