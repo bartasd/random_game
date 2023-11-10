@@ -3,6 +3,7 @@ let g_height = window.innerHeight-50;
 let box_x = 0;
 let box_y = 0;
 
+
 const updateViewport = () => {
     g_width = window.innerWidth-50;
     g_height = window.innerHeight-50;
@@ -32,5 +33,4 @@ function moveElement() {
 }
 
 const box = document.getElementById('box');
-box.addEventListener("DOMContentLoaded", moveElement())
-console.log(box);
+moveElement();
