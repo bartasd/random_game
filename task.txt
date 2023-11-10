@@ -15,3 +15,5 @@ Kiekviename rounde naršyklėje atvaizduokite laikmatį skaičiuojantį roundo t
 Pasibaigus žaidimui atvaizduokite laimėtojo vardą bei mygtuką, ant kurio paspaudus žaidimas būtų pradedamas iš naujo.
 
 
+
+l;
