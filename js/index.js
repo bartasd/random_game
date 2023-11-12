@@ -50,9 +50,6 @@ function start() {
     timeElapsed = Date.now() - begin;
     timer.innerHTML = roundTime;
     round.innerHTML = roundCount;
-    userPTS.innerHTML = userPoints;
-    pcPTS.innerHTML = pcPoints;
-
     if(timeElapsed/1000 > time)
     {
         if(roundCount === 10 && roundTime === 0)
@@ -81,10 +78,12 @@ function init() {
 
 const userBONUS = () => {
     userPoints++;
+    userPTS.innerHTML = userPoints;
     userClicked = true;
 }
 const pcBONUS = () => {
     pcPoints++;
+    pcPTS.innerHTML = pcPoints;
     userClicked = true;
 }
 
