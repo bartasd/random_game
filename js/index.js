@@ -5,6 +5,7 @@ let box_y = 0;
 let userPoints = 0;
 let userClicked = false;
 let pcPoints = 0;
+let gameStarted = false;
 
 const updateViewport = () => {
     g_width = window.innerWidth-50;
@@ -66,25 +67,34 @@ function start() {
     window.requestAnimationFrame(start);
 }
 
-function init() {
+function init(event) {
+    event.stopPropagation();
     abottom.classList.remove("inputON");
     box.classList.remove('box_noDisplay');
     name = document.querySelector('input').value;
     login.style.display = "none";
     document.querySelector(".user > h1").innerHTML = name;
     begin = Date.now();
+    gameStarted = true;
     start();
 }
 
-const userBONUS = () => {
-    userPoints++;
-    userPTS.innerHTML = userPoints;
-    userClicked = true;
+const userBONUS = (event) => {
+    if(!userClicked){
+        event.stopPropagation();
+        userPoints++;
+        userPTS.innerHTML = userPoints;
+        userClicked = true;
+    }
 }
-const pcBONUS = () => {
-    pcPoints++;
-    pcPTS.innerHTML = pcPoints;
-    userClicked = true;
+
+const pcBONUS = (event) => {
+    if(!userClicked && gameStarted){
+        event.stopPropagation();
+        pcPoints++;
+        pcPTS.innerHTML = pcPoints;
+        userClicked = true;
+    }
 }
 
 submit_name.addEventListener('click', init);
